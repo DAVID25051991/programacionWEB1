@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+	/*se aplica a todos los elementos del documento HTML. Es una forma de seleccionar y aplicar estilos de manera global a todos los elementos, sin excepción.*/
+	margin: 0;
+	/* se utiliza para establecer el espacio de margen alrededor de un elemento*/
+	padding: 0;
+	/* se utiliza para establecer el espacio de relleno alrededor del contenido de un elemento. se p[uede utilizar asi tambien  margin: valor-arriba valor-derecha valor-abajo valor-izquierda*/
+	box-sizing: border-box;
+	/*se utiliza para controlar cómo se calcula el tamaño total de un elemento, incluyendo el contenido, el padding y el borde. */
+}
+
+html {
+	font-size: 62.5%;
+	/*se utiliza para establecer el tamaño de fuente base en un valor del 62.5% del tamaño predeterminado del navegador en todo el documento HTML.*/
+}
+
+body {
+	background-color: #121212;
+	/*para establecer el color de fondo de un elemento. */
+	font-family: 'Rubik';
+	/* se utiliza para especificar la fuente a utilizar en un elemento o conjunto de elementos dentro de un documento.*/
+}
+
+.contenedor {
+	display: grid;
+	/*se utiliza para establecer un contenedor como un contenedor de cuadrícula.*/
+	grid-template-columns: 30rem 1fr;
+	/*se utiliza en Grid para definir el tamaño y la distribución de las columnas en un contenedor de cuadrícula. */
+	grid-template-rows: min-content 1fr min-content;
+	/* crea una cuadrícula con tres filas, donde la primera y la tercera fila tienen una altura basada en su contenido, mientras que la segunda fila se expande para ocupar el espacio restante en el contenedor. Este enfoque proporciona un diseño flexible y adaptable a diferentes tamaños de contenido.*/
+	margin-bottom: 8rem;
+	/*se utiliza para establecer el margen inferior de un elemento.*/
+}
+
+.topbar {
+	/*TopBar o barra superior*/
+	display: flex;
+	/*se utiliza para establecer un contenedor como un contenedor flexible. */
+	justify-content: space-between;
+	/*se utiliza en CSS para distribuir el espacio sobrante de manera uniforme entre los elementos secundarios dentro de un contenedor flexible.*/
+	align-items: center;
+	/*para alinear verticalmente los elementos secundarios dentro de un contenedor flexible.*/
+	padding: 1rem 2rem;
+	/*para establecer el espacio de relleno alrededor del contenido de un elemento. Se puede especificar el valor del relleno en diferentes formas, como valores individuales para cada lado o utilizando la sintaxis de reloj (top, right, bottom, left).*/
+	background-color: #101010;
+	/*para establecer el color de fondo de un elemento. */
+	position: fixed;
+	/*se utiliza para posicionar un elemento de manera fija en relación a la ventana del navegador, independientemente de la posición de desplazamiento.*/
+	z-index: 600;
+	/*para controlar el apilamiento de elementos posicionados en una página web.*/
+	top: 0;
+	/*establecer la posición vertical de un elemento posicionado, como absolute o fixed, respecto a su contenedor o al elemento padre.*/
+	right: 0;
+	/*para establecer la posición horizontal de un elemento posicionado, como absolute o fixed, respecto a su contenedor o al elemento padre.*/
+	width: calc(100% - 30rem);
+	/* se utiliza para establecer el ancho de un elemento. se está estableciendo que el ancho del elemento será igual al 100% del ancho de su contenedor menos 30rem  */
+}
+
+.container-arrows {
+	display: flex;
+	/*se utiliza para establecer un contenedor flexible en línea.*/
+	gap: 3rem;
+	/*se utiliza para establecer el espacio entre los elementos secundarios de un contenedor flexible (display: flex; o display: grid;).*/
+}
+
+.container-arrow-left,
+.container-arrow-right {
+	background-color: #0a0a0a;
+	/*para establecer el color de fondo de un elemento. */
+	width: 3rem;
+	/*para establecer el ancho de un elemento.*/
+	height: 3rem;
+	/*para establecer la altura de un elemento. */
+	border-radius: 50%;
+	/*para establecer el radio de los bordes de un elemento.*/
+	display: flex;
+	/*se utiliza para establecer un contenedor flexible en línea.*/
+	justify-content: center;
+	/*para alinear horizontalmente los elementos dentro de un contenedor flexible (display: flex) a lo largo del eje principal.*/
+	align-items: center;
+	/*para alinear verticalmente los elementos dentro de un contenedor flexible*/
+}
+
+.container-arrow-left i,
+.container-arrow-right i {
+	color: #1ed760;
+	/* para establecer el color del texto dentro de un elemento.*/
+	font-size: 1.4rem;
+	/*se utiliza para establecer el tamaño de fuente de un elemento. acuerdate que un rem equivale a 16px*/
+}
+
+.buttons-user {
+	display: flex;
+	/*se utiliza para establecer un contenedor flexible en línea.*/
+	align-items: center;
+	/*para alinear horizontalmente los elementos dentro de un contenedor flexible (display: flex) a lo largo del eje principal.*/
+	gap: 3rem;
+	/*se utiliza para establecer el espacio entre los elementos secundarios de un contenedor flexible (display: flex; o display: grid;).*/
+}
+
+.btn-register {
+	color: #a7a7a7;
+	/* para establecer el color del texto dentro de un elemento.*/
+	font-weight: 700;
+	/*se utiliza para establecer el grosor o peso de la fuente de un elemento de texto.*/
+	text-decoration: none;
+	/*se utiliza para controlar la decoración del texto, como subrayado, tachado, resaltado, etc. */
+	font-size: 1.6rem;
+	/*se utiliza para establecer el tamaño de fuente de un elemento. acuerdate que un rem equivale a 16px*/
+}
+
+.btn-register:hover {
+	/*recuerda  que la funcionhoveres para aplicar estilos a un elemento cuando se coloca el cursor sobre él.*/
+	color: #fff;
+	/* para establecer el color del texto dentro de un elemento.*/
+	transform: scale(1.04);
+	/*se utiliza para aplicar transformaciones a un elemento, como rotaciones, escalados, sesgados, traslaciones, entre otros.*/
+}
+
+.btn-login {
+	text-decoration: none;
+	/*se utiliza para controlar la decoración del texto, como subrayado, tachado, resaltado, etc. */
+}
+
+.btn-full {
+	font-size: 1.6rem;
+	/*se utiliza para establecer el tamaño de fuente de un elemento. acuerdate que un rem equivale a 16px*/
+	color: #000;
+	/* para establecer el color del texto dentro de un elemento.*/
+	padding: 1.5rem 2rem;
+	/*En este caso, se establece un espaciado de 1.5rem en la parte superior e inferior, y un espaciado de 2rem en los lados izquierdo y derecho.*/
+	border-radius: 2rem;
+	/*para establecer el radio de los bordes de un elemento.*/
+	font-weight: 700;
+	/*se utiliza para establecer el grosor o peso de la fuente de un elemento de texto.*/
+	background-color: #fff;
+	/*para establecer el color de fondo de un elemento. */
+	border: none;
+	/*para eliminar completamente los bordes de un elemento. */
+	outline: none;
+	/*para eliminar el contorno resaltado que aparece al enfocar un elemento utilizando la interacción del teclado, como presionar la tecla "Tab" para navegar entre elementos de un formulario.*/
+	cursor: pointer;
+	/*para cambiar el cursor del mouse cuando se coloca sobre un elemento, indicando que el elemento es interactivo y se puede hacer clic en él.*/
+}
+
+.btn-full:hover {
+	transform: scale(1.04);
+	/*se utiliza para aplicar transformaciones a un elemento, como rotaciones, escalados, sesgados, traslaciones, entre otros.*/
+}
+
+.navbar {
+	background-color: #000000;
+	/*para establecer el color de fondo de un elemento. */
+	color: #b3b3b3;
+	/* para establecer el color del texto dentro de un elemento.*/
+	padding-top: 2.4rem;
+	/*para establecer el espaciado interno (padding) en la parte superior de un elemento.*/
+	grid-row: 1/3;
+	/*se indica que el elemento abarcará desde la fila 1 hasta la fila 3 en la cuadrícula. Esto significa que ocupará dos filas consecutivas en el diseño de la cuadrícula*/
+	grid-column: 1/2;
+	/*se indica que el elemento abarcará desde la columna 1 hasta la columna 2 en la cuadrícula. Esto significa que ocupará una sola columna en el diseño de la cuadrícula.*/
+	display: flex;
+	/*para crear un contenedor flexible que organiza los elementos secundarios en una línea horizontal o vertical, dependiendo de la dirección establecida.*/
+	flex-direction: column;
+	/*para establecer la dirección en la que se colocan los elementos secundarios dentro de un contenedor flexible (elemento con display: flex;).*/
+	gap: 4rem;
+	/* se utiliza en Grid y Flexbox para establecer el espacio entre los elementos secundarios dentro de un contenedor. Específicamente, gap controla el espacio entre filas y columnas en un diseño de cuadrícula o en un contenedor flexible.*/
+	position: fixed;
+	/*se utiliza para posicionar un elemento de forma fija en relación con la ventana del navegador, independientemente del desplazamiento del contenido. Esto significa que el elemento fijo permanecerá en la misma posición incluso cuando el usuario se desplace por la página.*/
+	width: 30rem;
+	/*para establecer el ancho de un elemento.*/
+	height: 100%;
+	/*se utiliza para establecer la altura de un elemento.*/
+}
+
+.logo-svg {
+	fill: #1ed760;
+	/*da el color a los vectoriales*/
+	width: 18rem;
+	/* 1rem equivaler a 16px esto daria 288px */
+	padding: 0 38px;
+	/*para el vertical damos 0px y para el horizontal 38px*/
+
+}
+
+.nav-main {
+	padding: 0 38px;
+	/*tambien podemos colocar 2.4rem que es la medida para el eye horizontal derecha e izquierda el padin es la margen interna del contenedor*/
+	display: flex;
+	/* permite establecer un elemento como flexible como un contenedor*/
+	flex-direction: column;
+	/*se utiliza junto con display: flex; para establecer la dirección principal de los elementos dentro de un contenedor flexible.*/
+	gap: 3rem;
+	/* se utiliza en CSS para establecer el espaciado entre los elementos de un contenedor flexible cuando se utiliza el valor de visualización grid o flex.tambien podemos utilizar 48px */
+}
+
+.nav-main li {
+	/*se establecio la propieda  a la classe nav-main y a la clase li*/
+	list-style: none;
+	/*  se utiliza para eliminar los estilos de viñetas o numeración de una lista.*/
+}
+
+.nav-main li a {
+	/*se establecio la propieda  a la classe nav-main y a la clase li*/
+	text-decoration: none;
+	/*se utiliza para eliminar la decoración de texto predeterminada, como subrayado, línea sobre el texto, línea a través del texto,*/
+	font-size: 1.6rem;
+	/* se utilñiza para darle tamaño a una fuente tambiem pódemos colocar 26px que es un valor aproximado*/
+	color: #1ed760;
+	/*da el color a la fuente*/
+	display: flex;
+	/* permite establecer un elemento como flexible como un contenedor*/
+	align-items: center;
+	/* se utiliza para alinear verticalmente los elementos hijos dentro de un contenedor flex*/
+	justify-content: flex-start;
+	/*se utiliza para alinear los elementos hijos dentro de un contenedor flex en el inicio del eje principal. */
+	gap: 2rem;
+	/*se utiliza en CSS para establecer el espaciado entre los elementos de un contenedor flexible cuando se utiliza el valor de visualización grid o flex.tambien podemos utilizar 32px*/
+	font-weight: 700;
+	/*se utiliza para especificar el grosor o la negrita de la fuente de texto. */
+	text-overflow: ellipsis;
+	/*se utiliza para controlar cómo se muestra el contenido de un elemento cuando excede el espacio disponible para mostrarlo completamente.*/
+	transition: all 500ms ease;
+	/*se utiliza para definir una transición suave entre los cambios de propiedades de un elemento*/
+}
+
+.nav-main li a:hover {
+	/* le damos la propiedad de hover para que se establesca una funcion al pasar el mouse por encima de ellos*/
+	color: #fff;
+	/*le damos color a la fuente para que cambie al pasar el mouse por encima*/
+}
+
+.nav-main li a i {
+	/*se establecio la propieda  a la classe nav-main y a la etiqueta li y a i la etiqueta i se refiere a l icono */
+	font-size: 2rem;
+	/* se utiliza para darle tamaño a una fuente */
+}
+
+.extra-options {
+	display: inline-flex;
+	/* indica que el elemento debe comportarse como un elemento de línea, pero al mismo tiempo, debe usar el modelo de caja flexible.*/
+	flex-direction: column;
+	/*se utiliza para establecer la dirección de los elementos dentro de un contenedor flexible.*/
+	gap: 3rem;
+	/* se utiliza para establecer el espacio entre los elementos de un contenedor flexible cuando se utilizan las propiedades display: grid o display: inline-grid. Es una forma conveniente de establecer el margen entre las filas y columnas del diseño grid.*/
+	padding: 0 2.4rem;
+	/*se utiliza para establecer el espacio de relleno alrededor del contenido de un elemento. Tiene cuatro valores que se pueden establecer en el siguiente orden: arriba, derecha, abajo, izquierda.*/
+	margin-top: 1.5rem;
+	/*se utiliza para establecer el espacio de margen en la parte superior de un elemento.*/
+	flex: 1;
+	/*es una forma abreviada para establecer tres propiedades relacionadas: flex-grow, flex-shrink y flex-basis. Estas propiedades se utilizan para controlar el comportamiento de un elemento flexible dentro de un contenedor flex.*/
+}
+
+.extra-options button {
+	border: none;
+	/*quita el borde del elemento*/
+	outline: none;
+	/*se está eliminando el contorno por defecto que se muestra al enfocar un elemento, como sucede cuando se hace clic en un enlace o se selecciona un campo de entrada.*/
+	background: transparent;
+	/*se reaqliza una trasparencia en el fondo del elemento*/
+	color: #b3b3b3;
+	/*se pone color al texto*/
+	text-align: left;
+	/*se indica que el texto debe alinearse a la izquierda dentro del elemento.*/
+	font-size: 1.6rem;
+	/*le da tamaño al texto del elemento*/
+	font-weight: 600;
+	/*se utiliza para especificar el grosor o la negrita de la fuente de texto. */
+	display: flex;
+	/* permite establecer un elemento como flexible como un contenedor*/
+	gap: 1.5rem;
+	/* se utiliza para establecer el espacio entre los elementos de un contenedor flexible cuando se utilizan las propiedades display: grid o display: inline-grid. Es una forma conveniente de establecer el margen entre las filas y columnas del diseño grid.*/
+	cursor: pointer;
+	/*para cambiar el cursor del mouse cuando se coloca sobre un elemento, indicando que el elemento es interactivo y se puede hacer clic en él.*/
+	transition: all 0.3s ease;
+	/*se utiliza para aplicar una transición suave entre diferentes valores de una o varias propiedades */
+}
+
+.extra-options button i {
+	font-size: 2rem;
+	/*le da tamaño al texto del elemento*/
+}
+
+.extra-options button:hover {
+	color: #1ed760;/*se da color al texto*/
+}
+/*         CONTENIDO PRINCIPAL        */
+.main-content {
+	grid-row: 1/3;
+	grid-column: 2/-1;
+
+	background-color: #121212;
+	padding: 2.5rem;
+	
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+.title-playlist {
+	font-size: 2.4rem;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.container-name-rock{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 2rem;
+}
+
+.container-card-rock {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 2.4rem;
+}
+
+.card-rock {
+	background-color: #181818;
+	border-radius: 0.5rem;
+	padding: 1.6rem;
+	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+	position: relative;
+}
+
+.card-rock:hover{
+	background-color: #282828;
+}
+
+.card-img img {
+	width: 100%;
+	border-radius: 0.5rem;
+}
+
+.card-img {
+	overflow: hidden;
+}
+
+.card h2 {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	font-size: 1.6rem;
+	color: #fff;
+	font-weight: 600;
+}
+
+.card p {
+	font-size: 1.3rem;
+	color: #b3b3b3;
+	font-weight: 400;
+	line-height: 1.5;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+
+/*               FOOTER               */
+
+.footer {
+	background-color: #000;
+}
+
+/* Clases Adicionales */
+
+
+.transparent {
+	opacity: 0.9;
+}
+
+.btn-play {
+	width: 5rem;
+	height: 5rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #1ed760;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	position: absolute;
+	top: 55%;
+	left: 52%;
+	transform: translate(50%, -50%);
+	cursor: pointer;
+}
+
+.btn-play i {
+	font-size: 2.3rem;
+	padding-left: .5rem;
+}
