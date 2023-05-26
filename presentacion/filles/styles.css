@@ -1,0 +1,59 @@
+* {/*estilo universal */
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+font-style: italic;
+  color: blanchedalmond;
+  background: rgb(3, 3, 3);
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+  grid-template-columns: 1/3fr
+}
+header h1 {
+  font-family: 'Instrument Serif', serif;
+}
+/*siempre que se crea una clase se crea una div*/
+.navegador {
+  border: #b115155d;
+  border-radius: 32xp;
+  display: flex;/*para que quede en linea vertical*/
+  justify-content: space-between;/*ocupa todo el espacio de la paguina */
+  background-color: rgba(0, 0, 255, 0.205) ;
+  width: 250xp;
+  height: 150xp;
+  grid-column-start: span
+}
+.item{
+  list-style: none;
+  text-align: justify;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;/*tamaño de letra */
+  color: rgb(226, 136, 26)
+}
+main {
+  width: 100%;
+  height: 600px;
+}
+.
+.contenedor {
+color: aqua;
+text-align: center;
+
+}
+.titulo{
+  font-family: 'Instrument Serif', serif;
+  font-size: 10x;
+  color: #b115155d;
+ text-align: center
+}
+.piePad {
+  font-size: 15px;
+
+}
