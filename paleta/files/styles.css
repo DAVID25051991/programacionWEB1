@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&family=Instrument+Serif:ital@1&family=Vina+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #2D2727;
+
+}
+
+.tituloPrincipal {
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    color: #F0EB8D;
+    background-color: #8F43EE;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    }
+    .miCuenta {
+        background-color: #8F43EE;
+        width: 30%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 15px;
+    }
+.ultimosMovimientos{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 20px;
+    color: #F0EB8D;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    
+}
+.ultimosMovimientos h2{
+    background-color: #8F43EE;
+    border-radius: 10px;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+.espacio {
+  width: 30%;
+  height: 30%;
+}
+.movimientos {
+    
+   
+    font-family: 'Instrument Serif', serif;
+    color: #eae7ee;
+    text-align: center;
+    margin: auto;
+    margin-left: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-bottom-left-radius: 15px;
+}
+.movimientos h3 {
+    background-color: #8F43EE;
+    color: #F0EB8D;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+
+.palet1 {
+    background-color: #537188;
+}
+.palet2{
+    background-color: #CBB279;
+}
+.palet3{
+    background-color: #E1D4BB;
+}
+.palet4{
+    background-color: #EEEEEE;
+}
+.final {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.palet5 {
+    background-color: rgb(12, 19, 80);
+}
+.palet6{
+    background-color: rgb(29, 38, 125);
+}
+.palet7{
+    background-color: rgb(92, 70, 156);
+}
+.palet8{
+    background-color: rgb(212, 173, 252);
+}
+/*paleta 3*/
+.palet9 {
+    background-color: hsl(100, 71%, 92%);
+}
+.palet10{
+    background-color: hsl(140, 42%, 74%);
+}
+.palet11{
+    background-color: hsl(61, 19%, 55%);
+}
+.palet12{
+    background-color: hsl(45, 25%, 41%);
+}
