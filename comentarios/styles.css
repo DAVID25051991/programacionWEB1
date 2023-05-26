@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: #212534;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+  }
+
+  
+  /* ESTILOS BARRA DE MAVEGACION */
+  #barra_navegacion{
+    width: 100%;
+    position: sticky;
+    overflow: hidden;
+   margin-top: 15px;
+   margin-bottom: 15px;
+    display: block;
+  }
+  
+  .menu{
+    list-style: none;
+    padding: 1%;
+    margin-left: 3%;
+  }
+  
+  .menu li a{
+    text-decoration: none;
+  }
+  
+  .menu li a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid #2B9AE1;
+  }
+  
+  .liInicio{
+    color: #2B9AE1;
+  }
+  /*animacion caja*/
+
+  @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 45vh;
+    --card-width: calc(var(--card-height) );
+  }
+  
+  /*
+ 
+  */
+  
+  .card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    font-family: cursive;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  .card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 4));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+
+  /* ESTILOS FICHA INTRODUCCION Y CAJA DE COMENTARIO*/
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  #inputname {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+  }
+  #comenta_aqui{
+    font-family: 'Roboto', sans-serif;
+    border-radius: 32px;
+    resize: none;
+    text-align: center;
+  }
+  
+  #button{
+    padding: 3%;
+    margin: 2% ;
+    background-color: #2B9AE1;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+  }
+
+  /* ESTILO (DIV) COMENTARIOS QUE SE VAYAN AGREGANDO A TWITTER */
+  
+
+
+  .cajacomentario {
+    margin: 30px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+   
+      z-index: -1;
+      
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+
+}
+.user {
+    background-color: blue;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    
+}
+.user h3{
+    font-size: 30px;
+    color: rgb(73, 2, 2);
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cajacomentario p{
+    text-align: center;
+    border-top: solid rgba(0, 0, 0, 0.055);
+}
+
+
+.emojis {
+    border-color: black;
+    text-align: center;
+    border-top: solid black;
+}
+
+#comentariosfinal .cajacomentario .user .emojis div{
+  margin: 30px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+ 
+    z-index: -1;
+    
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+
+}
