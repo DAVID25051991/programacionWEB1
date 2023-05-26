@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&family=Instrument+Serif:ital@1&family=Vina+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #2D2727;
+
+}
+
+.tituloPrincipal {
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+    color: #F0EB8D;
+    background-color: #8F43EE;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    }
+    .miCuenta {
+        background-color: #8F43EE;
+        width: 30%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 15px;
+    }
+.ultimosMovimientos{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 20px;
+    color: #F0EB8D;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    
+}
+.ultimosMovimientos h2{
+    background-color: #8F43EE;
+    border-radius: 10px;
+    }
+
+.espacio {
+    display: flex;
+    justify-content:  center;
+}
+.movimientos {
+    
+    width: 20%;
+    height: 40%;
+    font-family: 'Instrument Serif', serif;
+    color: #8F43EE;
+    text-align: center;
+    margin: auto;
+    margin-left: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-bottom-left-radius: 15px;
+}
+.movimientos h3 {
+    background-color: #8F43EE;
+    color: #F0EB8D;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+.movimientos p {
+    background-color: #F0EB8D;
+}
+.precio {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #F0EB8D;
+
+}
