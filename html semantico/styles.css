@@ -1,0 +1,59 @@
+body {
+    background-image: url(imagenes/desierto.png);
+    background-size: 100% 100%;
+    margin: 10px;
+    padding: 10px;
+    }
+
+header {
+    width: 97%;
+    text-align: center;
+    background-color: #ffffff44;
+    gap: 3rem;
+}
+
+.negrita {
+    font-weight: 700;
+}
+
+.seccion {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+
+}
+
+.contenedor1 {
+    background-color: #ffffff44;
+    width: 25%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10%;
+
+}
+.contenedor2 {
+    background-color: #ffffff44;
+    width: 60%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.pie {
+    background-color: #ffffff44;
+    width: 97%;
+    text-align: center;
+}
