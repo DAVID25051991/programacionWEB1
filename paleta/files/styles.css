@@ -52,8 +52,6 @@
   height: 30%;
 }
 .movimientos {
-    
-   
     font-family: 'Instrument Serif', serif;
     color: #eae7ee;
     text-align: center;
@@ -69,9 +67,7 @@
     color: #F0EB8D;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    
 }
-
 .palet1 {
     background-color: #537188;
 }
