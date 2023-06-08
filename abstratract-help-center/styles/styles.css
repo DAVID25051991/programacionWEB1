@@ -75,6 +75,7 @@
 
   .busqueda{
     font-size: 3rem;
+    margin-bottom: 5rem;
   }
   #search {
       border: solid 1px black;
@@ -90,11 +91,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
 .info_cards{
     display: flex;
     justify-content: space-between;
-
 }
 .text{
     width: 20rem;
@@ -102,7 +103,23 @@
     gap: 2rem;
     display: flex;
     align-items: center;
+    margin: 1rem;
 }
-.tex_info {
-    
+.tex_info h2{
+    font-size: 2rem;
+}
+.tex_info p{
+    font-size: 1rem;
+
+}
+.tex_info a{
+    font-size: 1rem;
+    color: blueviolet;
+}
+footer{
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ flex-direction: column;
+
 }
