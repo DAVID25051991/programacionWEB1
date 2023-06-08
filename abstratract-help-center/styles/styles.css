@@ -111,19 +111,26 @@
 
   .text {
       width: 27rem;
-      height: 8rem;
+      height: 9rem;
       gap: 2rem;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       margin: 1rem;
   }
 
   .text img {
       width: 6rem;
+      align-items:center;
   }
 
+  .tex_info{
+    display: flexbox;
+
+  }
   .tex_info h2 {
       font-size: 2rem;
+      
+
   }
 
   .tex_info p {
