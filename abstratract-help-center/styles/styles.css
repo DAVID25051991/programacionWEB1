@@ -1,0 +1,157 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      font-family: 'Oswald', sans-serif;
+
+  }
+
+  header {
+      background-color: black;
+      color: aliceblue;
+      height: 4rem;
+  }
+
+  .navegador {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem 1rem 3rem;
+  }
+
+  .enlaces {
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      gap: 1rem;
+      align-items: center;
+  }
+
+  .line {
+      border-right: solid 2px;
+      padding: 0 1rem 0 1rem;
+  }
+
+
+  .btn_1 {
+      border: solid 1px white;
+      background: transparent;
+      color: aliceblue;
+      border-radius: 0.4rem;
+      padding: 0.6rem;
+      margin: 0 15px;
+  }
+
+  .btn_1:hover {
+      background-color: blue;
+      border: none;
+  }
+
+  .btn_2 {
+      border-radius: 0.4rem;
+      padding: 0.6rem;
+      background-color: blue;
+      color: aliceblue;
+      border: none;
+  }
+
+  .btn_2:hover {
+      background-color: white;
+      color: black;
+  }
+
+  .busqueda {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #DBDBF3;
+      width: 100%;
+      height: 300px;
+  }
+
+  .flecha {
+      position: absolute;
+      background: transparent;
+      width: 4rem;
+      left: 145vh;
+      top: 39vh;
+  }
+
+
+  .busqueda {
+      font-size: 3rem;
+      margin-bottom: 5rem;
+  }
+
+  #search {
+      border: solid 1px black;
+      box-shadow: 0px 1px 5px 1px;
+      width: 50%;
+      padding: 10px;
+      height: 60px;
+      margin: 15px;
+  }
+
+  .informa {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .info_cards {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .text {
+      width: 27rem;
+      height: 9rem;
+      gap: 2rem;
+      display: flex;
+      align-items: flex-start;
+      margin: 1rem;
+  }
+
+  .text img {
+      width: 6rem;
+      align-items:center;
+  }
+
+  .tex_info{
+    display: flexbox;
+
+  }
+  .tex_info h2 {
+      font-size: 2rem;
+      
+
+  }
+
+  .tex_info p {
+      font-size: 1rem;
+
+  }
+
+  .tex_info a {
+      font-size: 1rem;
+      color: blueviolet;
+      text-decoration: none;
+  }
+
+  footer {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      text-decoration: none;
+  }
+
+  footer a {
+      text-decoration: none;
+  }
