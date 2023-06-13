@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
 *{
     margin: 0px;
     padding: 0px;
 }
 
 body{
-    font-family: 'Exo', sans-serif;
+    font-family: 'Kablammo', cursive;
 }
 
 header{
@@ -22,7 +23,9 @@ ul{
 }
 li a{
     text-decoration: none;
-    color: #fff;
+    background: linear-gradient(blue, gray);
+    -webkit-background-clip: text;
+     color: transparent;  
 }
 
 .context {
@@ -38,7 +41,9 @@ li a{
 
 .context h1{
     text-align: center;
-    color: #fff;
+    background: linear-gradient(blue, rgb(156, 0, 0));
+    -webkit-background-clip: text;
+     color: transparent;  
     font-size: 50px;
 }
 .context input{
