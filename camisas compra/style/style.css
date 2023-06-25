@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: gray;
+    color: #fff;
+}
+.inCompra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+}
+.inicompra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    box-shadow: 0.2rem 0.5rem 0.8rem black;
+    border-radius: 10px;
+}
+.inicompra h1{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.inicompra label{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.inicompra input{
+    margin-bottom: 10px;
+    width: 10rem;
+    height: 18px;
+    border-radius: 8px;
+    padding: 0px 15px;
+    margin-bottom: 1rem;
+}
+.inicompra button{
+    background: #fff;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+.inicompra p{
+    font-size: 15px;
+    color: #000;
+}

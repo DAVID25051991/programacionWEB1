@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    color: #000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    list-style: none;
+    height: 100px;
+    align-items: center;
+    padding: 0 45px;
+}
+
+li {
+    padding: 30px 0px 40px 0px;
+    font-weight: 700;
+}
+
+.ensayo li:nth-child(3) {
+    border: none;
+    box-shadow: inset 0 -6px #008248;
+}
+
+.ubicacion a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #000;
+}
+
+.ubicacion a {
+    color: #000;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+
+.btn-singIn {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 13px;
+    background: none;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 7px 16px;
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+.btn-joinNow {
+    color: white;
+    font-size: 1rem;
+    padding: 13px;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+}
+
+.fin-nav {
+    display: flex;
+    align-items: center;
+    background-color: #1e3932;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .12), 0 0 2px 0 rgba(0, 0, 0, .24);
+    height: 50px;
+    color: #D4E9E2;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1003;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-top: -25px;
+}
+
+.fin-nav h1 {
+    padding: 0 0 0 130px;
+}
+
+.estrella-conten {
+    display: flex;
+    height: 770px;
+    background-color: #D4E9E2;
+}
+
+.free-coffee {
+    display: grid;
+    align-content: center;
+    height: 770px;
+    padding: 0 0 0 100px;
+    background-color: transparent;
+    z-index: 100;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    gap: none;
+}
+
+.Join_now {
+    background: #00754A;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #D4E9E2;
+    width: 100px;
+    height: 36px;
+
+}
+
+.free-coffee p {
+    color: #000;
+    font-size: 1.9rem;
+    padding: 2rem 0rem 1rem 0rem;
+
+}
+
+.estrella {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.extrella img {
+    width: 700px;
+    height: 770px;
+}
+
+/*tabpanel*/
+.tab-panel {}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: 1px;
+    border-color: gray;
+    border-style: dashed;
+    font-size: 1.4rem;
+}
+
+.tab-button.active {
+
+    cursor: pointer;
+    border-style: dashed;
+    box-shadow: inset 0 -6px #008248;
+
+}
+
+.color-gold {
+    color: #CBA258;
+}
+
+.tab-content {}
+
+.tab {
+    display: none;
+    background-color: #D4E9E2;
+    width: 100%;
+    padding-top: 35px;
+}
+
+.tab img {
+    width: 375px;
+}
+
+.tab.active {
+    display: block;
+    border: none;
+}
+
+.conten-tab {
+    display: flex;
+    justify-content: center;
+}
+
+.img-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tex-tab {
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+}
+
+.tex-tab h3 {
+    font-size: 24px;
+}
+.Getting{
+    text-align: center;
+    padding: 50px;
+}
+.orden-number{
+    display: flex;
+    justify-content: space-around;
+    padding: 45px;
+    gap: 3rem;
+}
+.conten-number{
+    display: grid;
+    justify-items: center;
+    width: 320px;
+    gap: 2rem;
+}
+
+.circle-number{
+    
+    color: #00754A;
+    width: 50px;
+    height: 50px;
+    border-color: #00754A;
+    border: solid #00754A;
+    border-radius: 50%;
+}
+.circle-img img{
+    width: 150px;
+    height: 150px;
+}
+.circle-number h2{
+    font-size: 2rem;
+}
+.circle-number h3, p{
+    color: #000;
+}
+.tex-extras a{
+    color: #00754A;
+}
+.get-your{
+    padding-top: 150px;
+}
+.cash{
+    background-color: #F2F0EB;
+}

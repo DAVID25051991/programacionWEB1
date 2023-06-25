@@ -39,6 +39,7 @@
 
 .lis-nav li:hover {
     transform: scale(1.3);
+    
 }
 
 .lis-nav a {
@@ -54,6 +55,20 @@
     color: #393E46;
     width: 100px;
     height: 30px;
+    animation-name: btn-contactame;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+@keyframes btn-contactame {
+    0%{
+        transform: scale(1);;
+    }
+    50%{
+        transform: scale(1.3);;
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .btn-contactame a {
@@ -309,6 +324,9 @@
     text-align: center;
     margin: 1rem 0px 1rem 0px;
     transition: 500ms;
+    animation-name: btn-contactame;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
 }
 
 .btn-hola:hover {
@@ -323,7 +341,24 @@
     /* un vh hace la convercion acorde a la pantalla del dispositivo con relacion a 800px */
     height: 50vh;
     border-radius: 15px;
+    animation-name: cerebro;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes cerebro {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
 }
 
 
