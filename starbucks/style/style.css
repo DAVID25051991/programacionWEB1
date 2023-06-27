@@ -171,7 +171,6 @@ h2 {
 }
 
 /*tabpanel*/
-.tab-panel {}
 
 .tab-buttons {
     display: flex;
@@ -199,7 +198,7 @@ h2 {
     color: #CBA258;
 }
 
-.tab-content {}
+
 
 .tab {
     display: none;

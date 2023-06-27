@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(217, 240, 217, 0.315);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 0px 24px 0;
+}
+
+.titulo {
+    color: green;
+    font-size: 2rem;
+}
+.tituloImg{
+    width: 1.5rem;
+    height: 1.5rem;
+
+}
+ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+select {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.btn{
+    border-radius: 3px;
+
+}
+
+.btn-log{
+    width: 4rem;
+    height: 2rem;
+    background-color: transparent;
+    border: solid 1px;
+    font-weight: 700;
+    border-color: green;
+}
+.btn-free{
+    width: 5rem;
+    height: 2rem;
+    background-color: green;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+.titlePlans{
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 8rem 6rem 8rem;
+
+}
+.btn-animado{
+    display: grid;
+    align-items: flex-end;
+
+}
+.meses-gratis{
+    text-align: end;
+    color: green;
+}
+.btn-circle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.ovalo{
+    background-color: green;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 15px;
+}
+.ovalo button{
+    background-color: white;
+    height: 24px;
+    width: 24px;
+    border: none;
+    border-radius: 50%;
+}
+
+.contenedorPrincipal{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 8rem 6rem 8rem;
+}
+.contenedor{
+    width: 500px;
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    padding: 15px;
+}
+.contenedorPrecio{
+    padding: 15px 0px 35px 0;
+}
+
+.precio{
+    display: flex;
+    justify-content: start;
+    border-bottom: solid black;
+    width: 300px;
+    padding: 15px 0px 15px 0;
+
+}
+.precio h3{
+    font-size: 45px;
+}
+.months{
+    left: 15px;
+    text-align: left;
+}
+.lista{
+  display: grid;
+  gap: 2rem;
+  list-style-type: none;
+}
+img{
+    width: 15px;
+    padding-right: 15px;
+}
+
+.btn-start{
+    background-color: green;
+    width: 16rem;
+    height: 3rem;
+    color: white;
+    font-size: 1.5rem;
+}
+.btnconten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 15px 0;
+}
