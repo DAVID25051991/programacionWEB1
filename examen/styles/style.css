@@ -94,6 +94,7 @@ select {
     display: flex;
     justify-content: space-between;
     padding: 0rem 8rem 6rem 8rem;
+    
 }
 .contenedor{
     width: 500px;
@@ -101,6 +102,7 @@ select {
     justify-content: center;
     background-color: white;
     padding: 15px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.9);
 }
 .contenedorPrecio{
     padding: 15px 0px 35px 0;
